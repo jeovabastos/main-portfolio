@@ -9,6 +9,7 @@
     --main-color: #4B4DC3; 
     --main-margin: 0 10%;  
     --main-font: 1.8rem;
+    --mobile-font: 1rem;
 }
 
 body{
@@ -211,3 +212,4 @@ header p{
     color: white;
     padding: 0 .5rem;
 }
+
