@@ -40,11 +40,20 @@
         width: 100%;
     }
 
-    .projects-section-items > div{
+    .projects-section-items-unit{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
+    .projects-section-items-unit-left, .projects-section-items-unit-right{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+
+
+    /* 
     .projects-section-items > div > img{
         width: 100%;
         min-height: fit-content;
@@ -52,7 +61,7 @@
 
     .projects-section-items-description{
         width: 100%;
-    }
+    } */
 
     .content-section-container{
         display: flex;

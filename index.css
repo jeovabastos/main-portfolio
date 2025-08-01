@@ -108,6 +108,7 @@ header p{
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
+    /* background-color: #282828; */
 }
 
 .projects-section > h2{
@@ -127,50 +128,66 @@ header p{
     flex-direction: column;
 }
 
-.projects-section-items > div{
-    background-color: white;
-    width: 100%;
+.projects-section-items-unit{
     display: flex;
+    width: 100%;
     margin-top: 1rem;
-    border-radius: .5rem;
-    overflow: hidden;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 25%));
 }
 
-.projects-section-items > div > img{
+.projects-section-items-unit-left{
+    display: flex;
     width: 50%;
-    min-height: 270px;
+    border-radius: .5rem;
 }
 
-.projects-section-items-description{
-    font-size: 2rem;
-    width: 50%;
-}
-
-.projects-section-items-description > h1{
-    font-size: 2.6rem;
-    color: var(--main-color);
-}
-
-.projects-section-items-description > a{
+.projects-section-items-unit-left > img{
     display: block;
+    width: 100%;
 }
 
-.projects-links{
+.projects-section-items-unit-right{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    color: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
+    width: 50%;
+    min-height: 100%;
+    object-fit: cover;
+    background-color: white;
 }
 
-.projects-links > a{
-    background-color: var(--main-color);
+.projects-section-items-unit-right > h1{
+    color: var(--main-color);
+    padding: 0 .5rem;
+    height: 20%;
+}
+
+.projects-section-items-unit-right-description{
     display: flex;
-    padding: .2rem 0;
+    flex-direction: column;
+    min-height: 80%;
+    justify-content: space-between;
+}
+.projects-section-items-unit-right-description > p{
+    font-size: 1.5rem;
+    display: flex;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 0 .5rem;
+}
+
+.projects-section-items-unit-right-description-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-section-items-unit-right-description-links > a{
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
     justify-content: center;
     width: 100%;
+    padding: .5rem 0;
+    background-color: var(--main-color);
 }
 
 .projects-section-items{
